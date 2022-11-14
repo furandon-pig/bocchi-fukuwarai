@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ぼっちちゃん ふくわらい</title>
+    <meta property="og:url" content="https://furandon-pig.github.io/bocchi-fukuwarai/" />
+    <meta property="og:title" content="ぼっちちゃん福笑いアプリ" />
+    <meta property="og:image" content="https://furandon-pig.github.io/bocchi-fukuwarai/bochii-fukuwarai-ogp.png" />
+    <meta property="og:description" content="ぼっち・ざ・ろっくの後藤ひとり氏をモデルにした福笑いアプリです。" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@furandon_pig" />
+    <style>
+      .row { margin-top: 4px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.4.0/fabric.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <p>
+        <img src="img/title01.png" width="20%" height="20%">
+        <img src="img/title02.png" width="10%" height="10%">
+        <img src="img/title03.png" width="10%" height="10%">
+      </p>
+    </div>
+    <div>
+      [<a href="#about" onClick="show_about()">このアプリについて</a>]&nbsp;
+      [<a href="#" onClick="download_image()">画像をダウンロードする</a>]&nbsp;
+      [<a href="https://bocchi.rocks/">TVアニメ「ぼっち・ざ・ろっく！」公式サイト</a>]
+    </div>
+    <div>
+    </div>
+    <div>
+      <canvas id="cvs" style="border: thin solid; width: 100%;"></canvas>
+    </div>
+    <div style="visibility: hidden; display: none;">
+      <img id="bochii" src="img/bochii.png">
+      <img id="eye01" src="img/eye01.png">
+      <img id="eye02" src="img/eye02.png">
+      <img id="eye03" src="img/eye03.png">
+      <img id="eye04" src="img/eye04.png">
+      <img id="eye05" src="img/eye05.png">
+      <img id="eye06" src="img/eye06.png">
+      <img id="eye07" src="img/eye07.png">
+      <img id="eye08" src="img/eye08.png">
+      <img id="lip01" src="img/lip01.png">
+      <img id="lip02" src="img/lip02.png">
+      <img id="lip03" src="img/lip03.png">
+      <img id="lip04" src="img/lip04.png">
+      <img id="lip05" src="img/lip05.png">
+      <img id="lip06" src="img/lip06.png">
+      <img id="lip07" src="img/lip07.png">
+      <img id="hair01" src="img/hair01.png">
+      <img id="hair02" src="img/hair02.png">
+      <img id="hair03" src="img/hair03.png">
+      <img id="hair04" src="img/hair04.png">
+      <img id="hako01" src="img/hako01.png">
+    </div>
+    <dialog id="about">
+      <h3>このアプリについて</h3>
+      <p>
+      でんでん(<a href="https://twitter.com/dendenhouse" target="_blank">@dendenhouse</a>)さんが作成された「<a href="https://twitter.com/dendenhouse/status/1591788338205589506" target="_blank">ぼっちちゃん福笑い</a>」のイラストをWebブラウザ上で遊べるようにアプリ化したものです。
+      </p>
+      <p>
+        <ul>
+          <li>GitHub:&nbsp;<a href="https://github.com/furandon-pig/bocchi-fukuwarai">furandon-pig/bocchi-fukuwarai</a>
+        </ul>
+      </p>
+      <p>
+        <button onClick="document.getElementById('about').close()">OK</button>
+      </p>
+    </dialog>
+  </body>
+  <script src="app.js"></script>
+  <script>
+    window.onload = function() {
+      app.init();
+    }
+  </script>
+</html>
+
