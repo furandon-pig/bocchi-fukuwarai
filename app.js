@@ -63,6 +63,7 @@ app = (function(){
         { 'id': 'eye06', 'left':  853, 'top': 313 },
         { 'id': 'eye07', 'left':  857, 'top': 524 },
         { 'id': 'eye08', 'left':  889, 'top': 787 },
+        { 'id': 'eye09', 'left':  450, 'top': 787 },
         //
         { 'id': 'lip01', 'left':  536, 'top': 450 },
         { 'id': 'lip02', 'left':  112, 'top': 361 },
@@ -71,6 +72,8 @@ app = (function(){
         { 'id': 'lip05', 'left':  915, 'top': 212 },
         { 'id': 'lip06', 'left':  861, 'top': 436 },
         { 'id': 'lip07', 'left':  876, 'top': 687 },
+        { 'id': 'lip08', 'left':  300, 'top': 900 },
+        { 'id': 'lip09', 'left':  600, 'top': 900 },
         //
         { 'id': 'hair01', 'left': 1122, 'top':  22 },
         { 'id': 'hair02', 'left': 1270, 'top':  30 },
